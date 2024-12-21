@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(95deg, #480c34, #824892);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.hero h1 span {
+    background-color: #380628;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.hero h1 span.con {
+    color: #380628;
+    background: none;
+    font-weight: 700;
+}
+
+/* Textarea */
+textarea {
+    width: 90%;
+    max-width: 600px;
+    height: 200px;
+    background: rgba(140, 87, 155, 0.35);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #b6a5b1;
+}
+
+/* Row */
+.row {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Select */
+select {
+    flex: 1;
+    color: white;
+    background-color: rgba(130, 72, 146, 0.6);
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(./chevron_down_down_side_dropdown_action_download_icon_190611.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    background-size: 15px;
+    height: 50px; 
+}
+
+/* Button */
+button {
+    background-color: #380628;
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, background-color 0.2s;
+    height: 50px; /* Default height */
+}
+
+button:hover {
+    background-color: #5e0540;
+    transform: scale(1.05);
+}
+
+button img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        justify-content: center;
+        height: auto; 
+        padding: 7px 0; 
+    }
+}
